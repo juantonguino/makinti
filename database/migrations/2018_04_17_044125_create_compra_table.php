@@ -18,6 +18,7 @@ class CreateCompraTable extends Migration
             $table->integer('valor-plataforma');
             $table->enum('estado', ['pendiente','enviado','entregado']);
             $table->integer('valor-pagado');
+            $table->date('fecha-estimada-entrega');
             
             $table->integer('producto-id')->unsigned();
             $table->foreign('producto-id')->references('id')->on('producto')->onDelete('cascade');
