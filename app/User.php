@@ -38,4 +38,11 @@ class User extends Authenticatable
     public function isArtisan(){
         return $this->rol=='artisan';
     }
+
+    public function artesano(){
+        return $this->hasMany('App\Artesano');
+    }
+    public function cliente(){
+        return $this->hasMany('App\Cliente');
+    }
 }
