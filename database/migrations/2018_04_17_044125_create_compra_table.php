@@ -26,6 +26,9 @@ class CreateCompraTable extends Migration
             $table->integer('oferta-id')->unsigned()->nullable();
             $table->foreign('oferta-id')->references('id')->on('oferta')->onDelete('cascade');
 
+            $table->integer('cliente-id')->unsigned()->nullable();
+            $table->foreign('cliente-id')->references('id')->on('cliente')->onDelete('cascade');
+
             $table->timestamps();
         });
     }

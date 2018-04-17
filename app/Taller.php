@@ -12,4 +12,16 @@ class Taller extends Model
      * @var string
      */
     protected $table = 'taller';
+
+    public function artesano(){
+        return $this->hasMany('App\Artesano');
+    }
+
+    public function contacto(){
+        return $this->hasMany('App\Contacto');
+    }
+
+    public function evento(){
+        return $this->hasMany('App\Evento');
+    }
 }

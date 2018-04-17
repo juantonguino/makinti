@@ -12,4 +12,8 @@ class Evento extends Model
      * @var string
      */
     protected $table = 'evento';
+
+    public function taller(){
+        return $this->belongsTo('App\Taller');
+    }
 }

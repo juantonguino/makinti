@@ -12,4 +12,12 @@ class Articulo extends Model
      * @var string
      */
     protected $table = 'articulo';
+
+    public function artesano(){
+        return $this->belongsTo('App\Artesano');
+    }
+
+    public function comentario(){
+        return $this->hasMany('App\Comentario');
+    }
 }

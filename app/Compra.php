@@ -12,4 +12,16 @@ class Compra extends Model
      * @var string
      */
     protected $table = 'compra';
+
+    public function cliente(){
+        return $this->belongsTo('App\Cliente');
+    }
+
+    public function oferta(){
+        return $this->belongsTo('App\Oferta');
+    }
+
+    public function producto(){
+        return $this->belongsTo('App\Producto');
+    }
 }

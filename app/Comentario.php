@@ -12,4 +12,12 @@ class Comentario extends Model
      * @var string
      */
     protected $table = 'comentario';
+
+    public function articulo(){
+        return $this->belongsTo('App\Articulo');
+    }
+
+    public function cliente(){
+        return $this->belongsTo('App\Cliente');
+    }
 }

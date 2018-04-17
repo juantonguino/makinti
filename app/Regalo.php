@@ -12,4 +12,8 @@ class Regalo extends Model
      * @var string
      */
     protected $table = 'regalo';
+
+    public function cliente(){
+        return $this->belongsTo('App\Cliente');
+    }
 }

@@ -12,4 +12,12 @@ class Oferta extends Model
      * @var string
      */
     protected $table = 'oferta';
+
+    public function producto(){
+        return $this->belongsTo('App\Producto');
+    }
+
+    public function compra(){
+        return $this->hasMany('App\Compra');
+    }
 }

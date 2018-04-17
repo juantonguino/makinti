@@ -12,4 +12,8 @@ class Contacto extends Model
      * @var string
      */
     protected $table = 'contacto';
+
+    public function taller(){
+        return $this->belongsTo('App\Taller');        
+    }
 }
