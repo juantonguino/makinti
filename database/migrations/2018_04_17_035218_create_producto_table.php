@@ -25,6 +25,7 @@ class CreateProductoTable extends Migration
             $table->enum('tipo-produccion',['En serie','Exclisiva']);
             $table->integer('cantidad-disponible');
             $table->bigInteger('precio');
+            $table->enum('tecnica', ['Paja toquilla', 'Tejido', 'Barniz de Pasto', 'Talla en Madera', 'Cueros', 'Olfebreria']);
             $table->boolean('fragil');
             $table->decimal('tamanio-alto', 5, 2);
             $table->decimal('tamanio-ancho', 5, 2);

@@ -21,8 +21,8 @@ class CreateRegaloTable extends Migration
             $table->integer('costo-envio');
             $table->integer('costo-regalo');
 
-            $table->integer('cliente-id')->unsigned();
-            $table->foreign('cliente-id')->references('id')->on('cliente')->onDelete('cascade');
+            //$table->integer('cliente-id')->unsigned();
+            //$table->foreign('cliente-id')->references('id')->on('cliente')->onDelete('cascade');
 
             $table->timestamps();
         });

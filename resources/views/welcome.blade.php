@@ -14,9 +14,9 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-heaader-makinti">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navigator-makinti">
         <a class="navbar-brand" href="#">
-            <img src="{{ asset('images/makinti-01.png') }}" alt="Logo Makinti" height="100">
+            <img src="{{ asset('images/makinti-01.png') }}" alt="Logo Makinti" height="70">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -42,9 +42,51 @@
         </div>
     </nav>
     <section>
+        <article>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="{{ asset('images/galeria/banner-04.jpg') }}" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ asset('images/galeria/banner-03.png') }}" alt="Second slide">
+                    </div>
+                    <!--
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ asset('images/galeria/makinti-04.jpg') }}" alt="Third slide">
+                    </div>
+                    -->
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </article>
+    
         <div>
-            <img src="{{ asset('images/banner-02.jpg') }}" alt="Banner makinti" width="100%">
+            <img src="{{ asset('images/banner-02.png') }}" alt="Banner makinti" width="100%">
         </div>
+        <footer>
+            <div id="copy">
+                COPYRIGHT © MAKINTI. ALL RIGHTS RESERVED.
+            </div>
+            <div id="arriba">
+                <a href="#carouselExampleControls">IR ARRIBA</a>
+            </div>
+            <div>
+                <h3>CONTACTENOS</h3>
+                    <p>Makinti es una empresa dedicada a
+                        Hashitoapps es una empresa dedicada al desarrollo de 
+                    software radicada en Pasto - Colombia, Programamos 
+                    cualquier aplicación web o móvil con tecnologías de punta.
+                    </p>
+            </div>
+        </footer>
     </section>
 </body>
 </html>

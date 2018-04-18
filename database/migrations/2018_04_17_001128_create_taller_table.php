@@ -21,6 +21,8 @@ class CreateTallerTable extends Migration
             $table->text('slogan');
             $table->text('logo');
             $table->text('banner');
+            $table->decimal('latitud', 10,6);
+            $table->decimal('longitud', 10,6);
 
             $table->timestamps();
         });
