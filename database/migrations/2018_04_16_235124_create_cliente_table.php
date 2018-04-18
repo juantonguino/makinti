@@ -18,7 +18,7 @@ class CreateClienteTable extends Migration
             $table->text('nombre');
             $table->date('fecha-nacimiento');
             $table->enum('comunidad', ['Afro', 'Indigena', 'Gitano']);
-            $table->enum('sexo', ['Hombre', 'Mujer', 'Oreo']);
+            $table->enum('sexo', ['Hombre', 'Mujer', 'Otro']);
             $table->date('fecha-inicio-menbresia');
             $table->date('fecha-fin-menbresia');
 
