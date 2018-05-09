@@ -1,13 +1,13 @@
 #navigator-makinti{
-    position: fixed;
-    top: 0px;
+    /**position: fixed;*/
+    /**top: 0px;*/
     z-index: 1000;
     /**width:100%;**/
     background-color:#EAD4A6 !important;
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
 }
 #carouselExampleControls{
-    margin-top: 96px;
+    /**margin-top: 96px;*/
 }
 
 #map{
@@ -15,10 +15,13 @@
     height: 200px;
 }
 
+.godown{
+    margin-top: 196px !important;
+}
+
 #idprueba{
     color: #F88011
-#26120A
-#B00A0C
-#EAD4A6;
-
+    #26120A
+    #B00A0C
+    #EAD4A6;
 }

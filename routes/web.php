@@ -10,10 +10,31 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/**
 Route::get('/', function () {
     return view('welcome');
 });
+ */
+
+Route::get('/index', 'SiteController@index')->name('index');
+
+Route::get('/', 'SiteController@index')->name('start');
+
+Route::get('/quienessomos', 'SiteController@quienesSomos')->name('who');
+
+Route::get('/aliados', 'SiteController@aliados')->name('aliados');
+
+Route::get('/hazparte', 'SiteController@hazParte')->name('part');
+
+Route::get('/iniciarsesion', 'SiteController@signIn')->name('signin');
+
+Route::get('/contactanos', 'SiteController@contactanos')->name('contactanos');
+
+Route::get('/artesanas', 'SiteController@artesanos')->name('artesanas');
+
+Route::get('/talleres', 'SiteController@talleres')->name('talleres');
+
+Route::post('/contactsendmail', 'SiteController@sendMail')->name('contactsendmail');
 
 Auth::routes();
 

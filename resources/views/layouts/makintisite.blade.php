@@ -30,44 +30,47 @@
     </script>
 </head>
 <body>
-    <nav class="w-100 p-3 navbar navbar-expand-lg navbar-light bg-light" id="navigator-makinti">
-        <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navigator-makinti">
+        <a class="navbar-brand" href="{{ route('start') }}">
             <img src="{{ asset('images/makinti-01.png') }}" alt="Logo Makinti" height="70">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Inicio</a>
+                    <a class="nav-link" href="{{ route('index') }}">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">¿Quienes Somos?</a>
+                    <a class="nav-link" href="{{ route('who') }}">¿Quienes Somos?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Aliados</a>
+                    <a class="nav-link" href="{{ route('aliados') }}">Aliados</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">¡¡Haz parte!!</a>
+                    <a class="nav-link" href="{{ route('part') }}">¡¡Haz parte!!</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Iniciar Sesion</a>
+                    <a class="nav-link" href="{{ route('contactanos') }}">Contactanos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('signin') }}">Iniciar Sesion</a>
                 </li>
             </ul>
         </div>
     </nav>
     <section>
-    @yield('content')        
+        @yield('content')
     </section>
-    <footer width="100%" style="background-color: #B00A0C; color: #26120A">
+    <footer width="100%" style="background-color: #B00A0C; color: #26120A" style="bottom: 0px;">
         <div class="container">
-            <div class="row justify-content-start">
+            <div class="row justify-content-start" style="margin-top:50px">
                 <div class="col-6">
                 <a href="" style="text-decoration:none; color:#26120A">COPYRIGHT © MAKINTI. ALL RIGHTS RESERVED.</a>
                 </div>
                 <div class="col-6">
-                <a href="#carouselExampleControls" style="text-decoration:none; color:#FFFFFF">IR ARRIBA</a>
+                <a href="#navigator-makinti" style="text-decoration:none; color:#FFFFFF">IR ARRIBA</a>
                 </div>
             </div>
         </div>
@@ -77,12 +80,10 @@
                 <div class="col-6">
                     <div class="row">
                         <h6>CONTACTENOS</h6>
-                        <p>Hashitoapps es una empresa dedicada al desarrollo de 
-                        software radicada en Pasto - Colombia, Programamos 
-                        cualquier aplicación web o móvil con tecnologías de punta.
-                        </p>
+                    </div>
+                    <div class="row">
                         <div>
-                            <p>Telefono: (+57)313 715 4902</p> 
+                            <p>Telefono: (+57)313 715 4902</p>
                             <p>Direccion: San Felipe</p>
                             <p>Email: makinti@gmail.com</p>
                         </div>
@@ -93,7 +94,7 @@
                         <h6>ESTAMOS AQUI</h6>
                     </div>
                     <div class="row">
-                        <div id="map" class="col-6" ></div>
+                        <div id="map"></div>
                     </div>
                 </div>
             </div>
